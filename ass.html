@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- for even -->
+<script>
+for( var x = 1; x <=100; x++ ){
+if ( x%2=== 0){
+    console.log(x);
+}
+}
+   //for odd
+   for( var x = 1; x <=100; x++ ){
+if ( x%2=== 1){
+    console.log(x);
+}
+}    
+   //20 students in 5 boxes
+// for(a= 1; a<= 5; a++){
+//     for(b=1; b<= 20; b++ ){
+//         console.log("carton" + "in" +a );
+
+//     }
+// }
+
+for (let a = 1; a <= 5; a++) {
+    console.log("Carton " + a + "");
+    for (let b = 1; b <= 20; b++) {
+        const studentNumber =( (a - 1) * 20 + b); 
+        console.log("Student " + studentNumber);
+    }
+    console.log("");
+}
+</script>
+</body>
+</html>
